@@ -7,6 +7,6 @@ class CalcTest extends PHPUnit_Framework_TestCase
 	public function testRun()
 	{
 		$calculator = new Calc();
-		$this->assertEqual(1.5, $calculator->run());
+		$this->assertEquals(1.5, $calculator->run());
 	}
 }
