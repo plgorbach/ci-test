@@ -9,4 +9,10 @@ class CalcTest extends PHPUnit_Framework_TestCase
 		$calculator = new Calc();
 		$this->assertEquals(1.5, $calculator->run());
 	}
+	
+	public function testRunShalRaiseError()
+	{
+		$calculator = new Calc();
+		$this->assertEquals(999.5, $calculator->run());
+	}
 }
